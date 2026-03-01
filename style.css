@@ -195,16 +195,23 @@ img {vertical-align: middle;}
 }
 
 @media (max-width: 768px) {
+
   .image-wrapper {
-    flex-direction: row;   /* stay side-by-side */
-    height: clamp(120px, 25vw, 180px);  /* shorter boxes */
+    flex-direction: column;   /* stack vertically */
+    height: auto;             /* let it grow naturally */
   }
 
   .img {
-    flex: 1 1 33.33%;      /* 3 equal columns */
-    margin-left: 0;         /* remove overlap */
+    margin: 0;
+    clip-path: none;          /* remove diagonal */
   }
 
+  .img img {
+    height: 200px;            /* fixed nice mobile height */
+    object-fit: cover;
+  }
+
+}
 
 /* ===== GALLERY STYLE ===== */
 
