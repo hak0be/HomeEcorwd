@@ -469,3 +469,7 @@ h4 {
     aspect-ratio: 2 / 1;   /* slightly taller on mobile */
   }
 }
+
+body {
+    text-align: justify;
+}
