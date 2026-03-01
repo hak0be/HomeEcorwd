@@ -156,9 +156,9 @@ img {vertical-align: middle;}
 .image-wrapper {
   display: flex;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1200px;
   margin: auto;
-  aspect-ratio: 2/1;
+  height: 250px;   /* 🔥 CHANGE THIS to control height */
   overflow: hidden;
 }
 
