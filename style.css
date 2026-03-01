@@ -194,12 +194,16 @@ img {vertical-align: middle;}
   margin-left: -5%;
 }
 
-/* 🔥 FORCE side-by-side in mobile */
 @media (max-width: 768px) {
   .image-wrapper {
-    flex-direction: row;
+    flex-direction: row;   /* stay side-by-side */
+    height: clamp(120px, 25vw, 180px);  /* shorter boxes */
   }
-}
+
+  .img {
+    flex: 1 1 33.33%;      /* 3 equal columns */
+    margin-left: 0;         /* remove overlap */
+  }
 
 
 /* ===== GALLERY STYLE ===== */
