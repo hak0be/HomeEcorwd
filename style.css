@@ -202,23 +202,6 @@ img {vertical-align: middle;}
 
 }
 
-/* Left */
-.img1 {
-  clip-path: polygon(0 0, 90% 0, 80% 100%, 0% 100%);
-}
-
-/* Middle */
-.img2 {
-  clip-path: polygon(15% 0, 90% 0, 80% 100%, 5% 100%);
-  margin-left: -5%;
-}
-
-/* Right */
-.img3 {
-  clip-path: polygon(15% 0, 100% 0, 100% 100%, 5% 100%);
-  margin-left: -5%;
-}
-
 /* ===== GALLERY STYLE ===== */
 
 .gallery-container {
