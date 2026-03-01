@@ -459,3 +459,9 @@ input {
   line-height: 1.6;
 }
 
+h4 {
+  margin-top: 20px;  /* space above */
+  margin-bottom: 20px; /* space below */
+  line-height: 1.6;    /* spacing between lines */
+}
+
