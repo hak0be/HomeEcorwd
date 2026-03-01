@@ -308,7 +308,7 @@ img {vertical-align: middle;}
 /* Card responsive width */
 .card {
   max-width: 1500px;
-  margin: 2pxx auto;
+  margin: 2px auto;
 }
 
 /* Mobile adjustments */
@@ -470,6 +470,3 @@ h4 {
   }
 }
 
-body {
-    text-align: justify;
-}
