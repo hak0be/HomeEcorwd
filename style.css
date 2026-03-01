@@ -470,7 +470,34 @@ h4 {
   }
 }
 
-  .footer p {
-    font-size: 14px;
+.footer {
+  background: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-card {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-item {
+  margin: 8px 0;
+  word-wrap: break-word;
+}
+
+/* Desktop: side by side */
+@media (min-width: 768px) {
+  .footer-card {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .footer-item {
+    margin: 0;
   }
 }
+
