@@ -403,13 +403,6 @@ img {vertical-align: middle;}
 
 }
 
-.mySlides, .slide-img {
-  width: 100%;
-  max-width: 1500px;
-  aspect-ratio: 3 / 1;  /* scales automatically */
-  object-fit: cover;
-}
-
 button {
   padding: 12px 25px;
   margin: 10px 5px;
