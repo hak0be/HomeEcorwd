@@ -45,7 +45,7 @@ img {vertical-align: middle;}
 
 .founder-text {
   flex: 2;
-  text-align: left;
+  text-align: auto;
   color: black;
   margin-left: 20px;
 }
@@ -71,7 +71,7 @@ img {vertical-align: middle;}
 
 .founder-text {
   flex: 2;
-  text-align: left;
+  text-align: auto;
   color: black;
   line-height: 1.5   /* makes spacing nicer */
 }
@@ -80,8 +80,6 @@ img {vertical-align: middle;}
   text-align: left;
   text-justify: auto;
 }
-
-
 
 /* Navbar container */
 .navbar {
@@ -153,8 +151,50 @@ img {vertical-align: middle;}
   color: yellow;
 }
 
+.image-wrapper {
+  display: flex;
+  flex-direction: row;       /* always side by side */
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: clamp(120px, 25vw, 280px); /* responsive height */
+  overflow: hidden;
+}
 
+.img {
+  flex: 1 1 33.33%;          /* 3 equal columns */
+  position: relative;
+  overflow: hidden;
+  margin-left: 0;             /* remove negative margins that break layout */
+}
 
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Maintain diagonal shapes for all screens */
+.img1 {
+  clip-path: polygon(0 0, 90% 0, 80% 100%, 0% 100%);
+}
+
+.img2 {
+  clip-path: polygon(15% 0, 90% 0, 80% 100%, 5% 100%);
+}
+
+.img3 {
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 5% 100%);
+  /* margin-left removed for mobile to avoid wrapping */
+}
+
+/* Optional: Adjust height for very small phones */
+@media (max-width: 480px) {
+  .image-wrapper {
+    height: 150px;  /* shorter boxes for small screens */
+  }
+}
 /* ===== GALLERY STYLE ===== */
 
 .gallery-container {
@@ -293,13 +333,13 @@ img {vertical-align: middle;}
   .card h2{
     font-size: 24px;
   }
-  
- .image-wrapper {
+
+  .image-wrapper {
     flex-direction: column;
   }
 
   .img {
-
+    clip-path: none;
     margin: 0;
   }
 
@@ -338,7 +378,6 @@ img {vertical-align: middle;}
 @media (max-width:768px){
   .mySlides{
     height:250px;
-    width: 450px;
   }
 }
 
@@ -371,6 +410,13 @@ img {vertical-align: middle;}
   flex-wrap:wrap;
   }
 
+}
+
+.mySlides, .slide-img {
+  width: 100%;
+  max-width: 1500px;
+  aspect-ratio: 3 / 1;  /* scales automatically */
+  object-fit: cover;
 }
 
 button {
@@ -424,5 +470,3 @@ h4 {
   margin-bottom: 20px; /* space below */
   line-height: 1.6;    /* spacing between lines */
 }
-
-
