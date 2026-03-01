@@ -155,15 +155,13 @@ img {vertical-align: middle;}
 
 .image-wrapper {
   display: flex;
-  width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   margin: auto;
-  height: 150px;   /* 🔥 CHANGE THIS to control height */
-  overflow: hidden;
 }
 
 .img {
   flex: 1;
+  aspect-ratio: 4 / 3;   /* ✅ Makes it square */
   position: relative;
   overflow: hidden;
 }
@@ -174,32 +172,21 @@ img {vertical-align: middle;}
   object-fit: cover;
 }
 
-/* Desktop diagonal */
+/* Left */
 .img1 {
   clip-path: polygon(0 0, 90% 0, 80% 100%, 0% 100%);
 }
 
+/* Middle */
 .img2 {
   clip-path: polygon(15% 0, 90% 0, 80% 100%, 5% 100%);
   margin-left: -5%;
 }
 
+/* Right */
 .img3 {
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 5% 100%);
   margin-left: -5%;
-}
-
-/* 🔥 KEEP SIDE BY SIDE ON MOBILE */
-@media (max-width: 768px) {
-
-  .image-wrapper {
-    flex-direction: row;   /* force horizontal */
-  }
-
-  .img {
-    flex: 1 1 33.33%;
-  }
-
 }
 
 /* ===== GALLERY STYLE ===== */
