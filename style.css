@@ -372,6 +372,7 @@ img {vertical-align: middle;}
 @media (max-width:768px){
   .mySlides{
     height:250px;
+    width: 450px;
   }
 }
 
