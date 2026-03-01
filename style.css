@@ -490,3 +490,23 @@ h4 {
   line-height: 1.6;    /* spacing between lines */
 }
 
+@media (max-width: 768px) {
+
+  .image-wrapper {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+
+  .img1,
+  .img2,
+  .img3 {
+    clip-path: none !important;
+    margin-left: 0 !important;
+  }
+
+  .img img {
+    height: 200px !important;
+    object-fit: cover;
+  }
+
+}
