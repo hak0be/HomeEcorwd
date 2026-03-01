@@ -458,3 +458,16 @@ input {
   font-size: clamp(16px, 2.5vw, 24px);
   line-height: 1.6;
 }
+
+/* Default: justify on large screens */
+.founder-text {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* On small screens (mobile), switch to left align for readability */
+@media (max-width: 768px) {
+  .founder-text {
+    text-align: left;  /* easier to read on narrow screens */
+  }
+}
