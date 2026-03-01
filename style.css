@@ -153,48 +153,40 @@ img {vertical-align: middle;}
 
 .image-wrapper {
   display: flex;
-  flex-direction: row;       /* always side by side */
-  width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   margin: auto;
-  height: clamp(120px, 25vw, 280px); /* responsive height */
-  overflow: hidden;
 }
 
 .img {
-  flex: 1 1 33.33%;          /* 3 equal columns */
+  flex: 1;
+  aspect-ratio: 4 / 3;   /* ✅ Makes it square */
   position: relative;
   overflow: hidden;
-  margin-left: 0;             /* remove negative margins that break layout */
 }
 
 .img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
-/* Maintain diagonal shapes for all screens */
+/* Left */
 .img1 {
   clip-path: polygon(0 0, 90% 0, 80% 100%, 0% 100%);
 }
 
+/* Middle */
 .img2 {
   clip-path: polygon(15% 0, 90% 0, 80% 100%, 5% 100%);
+  margin-left: -5%;
 }
 
+/* Right */
 .img3 {
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 5% 100%);
-  /* margin-left removed for mobile to avoid wrapping */
+  margin-left: -5%;
 }
 
-/* Optional: Adjust height for very small phones */
-@media (max-width: 480px) {
-  .image-wrapper {
-    height: 150px;  /* shorter boxes for small screens */
-  }
-}
 /* ===== GALLERY STYLE ===== */
 
 .gallery-container {
