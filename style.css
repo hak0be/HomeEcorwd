@@ -445,3 +445,27 @@ h4 {
   margin-bottom: 20px; /* space below */
   line-height: 1.6;    /* spacing between lines */
 }
+
+/* Responsive Header Slideshow */
+.mySlides {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.mySlides img,
+.slide-img {
+  width: 100%;
+  height: auto;          /* 🔥 makes it responsive */
+  aspect-ratio: 3 / 1;   /* keeps nice banner shape */
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .mySlides img,
+  .slide-img {
+    aspect-ratio: 2 / 1;   /* slightly taller on mobile */
+  }
+}
