@@ -325,15 +325,6 @@ img {vertical-align: middle;}
   .card h2{
     font-size: 24px;
   }
-
-  .image-wrapper {
-    flex-direction: column;
-  }
-
-  .img {
-    margin: 0;
-  }
-
 }
 
 .slide-img{
