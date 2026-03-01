@@ -158,7 +158,7 @@ img {vertical-align: middle;}
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  height: 250px;   /* 🔥 CHANGE THIS to control height */
+  height: 150px;   /* 🔥 CHANGE THIS to control height */
   overflow: hidden;
 }
 
