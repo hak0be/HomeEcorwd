@@ -153,23 +153,30 @@ img {vertical-align: middle;}
   color: yellow;
 }
 
-.image-wrapper {
-  display: flex;
-  max-width: 900px;
-  margin: auto;
-}
+@media (max-width: 768px) {
 
-.img {
-  flex: 1;
-  aspect-ratio: 4 / 3;   /* ✅ Makes it square */
-  position: relative;
-  overflow: hidden;
-}
+  .image-wrapper {
+    flex-direction: column;
+  }
 
-.img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  .img {
+    margin: 0;
+  }
+
+  /* New diagonal shapes for vertical layout */
+
+  .img1 {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+
+  .img2 {
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+  }
+
+  .img3 {
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+  }
+
 }
 
 /* Left */
