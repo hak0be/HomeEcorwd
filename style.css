@@ -45,7 +45,7 @@ img {vertical-align: middle;}
 
 .founder-text {
   flex: 2;
-  text-align: justify;
+  text-align: left;
   color: black;
   margin-left: 20px;
 }
@@ -71,13 +71,13 @@ img {vertical-align: middle;}
 
 .founder-text {
   flex: 2;
-  text-align: justify;
+  text-align: left;
   color: black;
   line-height: 1.5   /* makes spacing nicer */
 }
 
 .founder-text p {
-  text-align: justify;
+  text-align: left;
   text-justify: auto;
 }
 
@@ -459,15 +459,3 @@ input {
   line-height: 1.6;
 }
 
-/* Default: justify on large screens */
-.founder-text {
-  text-align: justify;
-  line-height: 1.5;
-}
-
-/* On small screens (mobile), switch to left align for readability */
-@media (max-width: 768px) {
-  .founder-text {
-    text-align: left;  /* easier to read on narrow screens */
-  }
-}
