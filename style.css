@@ -480,12 +480,13 @@ h4 {
   background: white;
   padding: 25px 20px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .footer-content{
   max-width: 1500px;
   margin: auto;
-  text-align: center; /* centers everything */
+  text-align: center;
   color: #0C3D7A;
   line-height: 1.8;
   font-size: 16px;
