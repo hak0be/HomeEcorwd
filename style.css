@@ -485,41 +485,17 @@ h4 {
 .footer-content{
   max-width: 1500px;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.footer-contact{
-  text-align: left;
+  text-align: center; /* centers everything */
   color: #0C3D7A;
+  line-height: 1.8;
   font-size: 16px;
-  line-height: 1.6;
 }
 
-.footer-copy{
-  text-align: right;
-  color: #0C3D7A;
-  font-weight: bold;
-}
-
-/* Mobile Responsive */
+/* Mobile adjustment */
 @media (max-width:768px){
-
   .footer-content{
-    flex-direction: column;
-    text-align: center;
+    font-size: 14px;
+    padding: 10px;
   }
-
-  .footer-contact{
-    text-align: center;
-  }
-
-  .footer-copy{
-    text-align: center;
-  }
-
 }
  
