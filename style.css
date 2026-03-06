@@ -470,4 +470,56 @@ h4 {
   }
 }
 
+
+
+
+
+/* ===== FOOTER STYLE ===== */
+
+.footer{
+  background: white;
+  padding: 25px 20px;
+  margin-top: 20px;
+}
+
+.footer-content{
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-contact{
+  text-align: left;
+  color: #0C3D7A;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer-copy{
+  text-align: right;
+  color: #0C3D7A;
+  font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+
+  .footer-content{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-contact{
+    text-align: center;
+  }
+
+  .footer-copy{
+    text-align: center;
+  }
+
+}
  
